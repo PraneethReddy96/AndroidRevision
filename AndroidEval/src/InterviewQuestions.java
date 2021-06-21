@@ -10,6 +10,9 @@ public class InterviewQuestions {
     It uses hashcode method , which gets(calculates) the particular hashcode of the key object and by applying
     hashing on that hashcode, it associates  the bucket location for storing the value object.
 
+    note : Hashing is the process of converting a given key into another value. A hash function is used to generate the new
+    value using an algorithm. the result is the hash value or hash. This is used to locate the bucket for storading value.
+
     And thus a value is stored using put() method.
 
 
