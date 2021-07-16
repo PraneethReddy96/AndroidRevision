@@ -17,13 +17,14 @@ public class spiral {
                 arr[i][j] = sc.nextInt();
             }
         }
-        int    top = 0;
+        int top = 0;
         int bottom = n - 1;
         int left = 0;
         int right = n - 1;
         int size = n * n ;
         int count=0;
         while(count < size){
+
             for (int i = top;i<=right && count < size;i++) {
                 System.out.print(arr[left][i]+ " ");
                 count++;
