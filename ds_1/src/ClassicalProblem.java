@@ -46,8 +46,6 @@ public class ClassicalProblem{
 
                 }
 
-
-
             }
 
             if(stk1.empty() && bin.size()==0){

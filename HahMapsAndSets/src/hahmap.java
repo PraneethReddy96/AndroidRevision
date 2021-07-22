@@ -18,8 +18,6 @@ public class hahmap {
         map.put("praneeth2",60);
         map.put("praneeth",70);
 
-
-
         System.out.println(map);
 
         System.out.println();
@@ -41,11 +39,8 @@ public class hahmap {
 
         }
 
-
-
-
-
         Iterator<String > iterator = map.keySet().iterator();
+
 
         while(iterator.hasNext()){
 
@@ -58,15 +53,7 @@ public class hahmap {
             }
 
         }
-
         System.out.println(map);
-
-
-
-
-
-
-
 
     }
 

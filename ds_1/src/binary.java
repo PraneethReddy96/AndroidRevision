@@ -52,10 +52,6 @@ public class binary {
 
             }
 
-
-
-
-
         return search(low,high,arr,k);
     }
 
