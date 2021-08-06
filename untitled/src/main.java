@@ -13,9 +13,8 @@ public class main {
 
         Scanner sc = new Scanner(System.in);
 
-        String s = sc.next();
-        String k = sc.next();
-        boolean isAnagram = false;
+        String s = sc.nextLine();
+        String k = sc.nextLine();
 
         for (int i = 0; i < s.length(); i++) {
 
@@ -44,33 +43,11 @@ public class main {
             }
 
 
-            Iterator<Map.Entry<Character, Integer>> entryIterator = map.entrySet().iterator();
-            Iterator<Map.Entry<Character, Integer>> entryIterator1 = map2.entrySet().iterator();
-
-
-            while (entryIterator.hasNext() && map.size() == map2.size()) {
-
-                Map.Entry<Character, Integer> iterator = entryIterator.next();
-                Map.Entry<Character, Integer> iterator1 = entryIterator1.next();
-
-
-                if (iterator.getValue() == iterator1.getValue()) {
-
-                    isAnagram = true;
-
-                } else
-                    isAnagram = false;
-                break;
-            }
         }
-        System.out.println(map);
-        System.out.println(map2);
-            if (isAnagram) {
-                System.out.println("Anagram");
-            } else if (map.size() != map2.size() || !isAnagram)
-                System.out.println("Not Anagram");
 
-
+        if(map.equals(map2)){
+            System.out.println("Anagram");
+        }else System.out.println("Not Anagram");
 
     }
 }
